@@ -1,5 +1,6 @@
 # Learning Languages ChatGPT
-A chatbot for learning many languages using ChatGPT and Whisper.
+A chatbot for learning many languages using ChatGPT and Whisper.  
+You speak in the language you're learning to improve your speaking, then Whisper transcribes your auido and you can see how well you did. Automatically send your transcription to ChatGPT getting an answer that you can read (and listening to in next version) and improve your reading and listening comprehension. ChatGPT allows you to have a coherent and interesting conversation.
 
 
 ## Getting Started
