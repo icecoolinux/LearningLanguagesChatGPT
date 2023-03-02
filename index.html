@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Language Learning using ChatGPT and Whisper</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css">
+	    <link rel="stylesheet" href="css/font-awesome.min.css">
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div id="config">
+			<a id="open_config" href="#" onclick="openConfig()" style="display:none">Open Config</a>
+			<a id="close_config" href="#" onclick="closeConfig()">Close Config</a><br><br>
+			<div id="config_options">
+				<label for="apikey_config">OpenAI API key: </label>
+				<input type="text" id="apikey_config" fname="apikey_config" size="50" value="YOUR_API_KEY"><br>
+				<label for="language_config">Language: </label>
+				<input type="text" id="language_config" fname="language_config" size="5" value="en">
+			</div>
+		</div>
+
+		<div id="messages">
+
+		</div>
+
+		<div id="record">
+			<div class="audio-recording-container">
+			    <i class="start-recording-button fa fa-microphone" aria-hidden="true"></i>
+			    <div class="recording-contorl-buttons-container hide">
+			        <i class="cancel-recording-button fa fa-times-circle-o" aria-hidden="true"></i>
+			        <div class="recording-elapsed-time">
+			            <i class="red-recording-dot fa fa-circle" aria-hidden="true"></i>
+			            <p class="elapsed-time"></p>
+			        </div>
+			        <i class="stop-recording-button fa fa-stop-circle-o" aria-hidden="true"></i>
+			    </div>
+			    <div class="text-indication-of-audio-playing-container">
+			        <p class="text-indication-of-audio-playing hide">Audio is playing<span>.</span><span>.</span><span>.</span></p>
+			    </div>
+			</div>
+			<div class="overlay hide">
+			    <div class="browser-not-supporting-audio-recording-box">
+			        <p>To record audio, use browsers like Chrome and Firefox that support audio recording.</p>
+			        <button type="button" class="close-browser-not-supported-box">Ok.</button>
+			    </div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script src="js/audio.js"></script>
+		<script src="js/handleAudio.js"></script>
+    	<script src="js/index.js"></script>
+		<script src="js/whisper.js"></script>
+		<script src="js/chatgpt.js"></script>
+	</body>
+</html>
